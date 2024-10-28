@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "e61a96b0-836e-42fa-a1c1-895d23f603fe",
+		"name": "Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39339505"
+	},
+	"item": [
+		{
+			"name": "https://app.yaenergetik.ru/api?v2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "demo",
+						"username": "demo@demo.demo"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"network.list\",\n    \"id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://app.yaenergetik.ru/api?v2&sessionId=uvhvaue2rspdf0lirk4imvt4q2t",
+					"protocol": "https",
+					"host": [
+						"app",
+						"yaenergetik",
+						"ru"
+					],
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "v2",
+							"value": null
+						},
+						{
+							"key": "sessionId",
+							"value": "uvhvaue2rspdf0lirk4imvt4q2t"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.yaenergetik.ru/api?v2&sessionId=uvhvaue2rspdf0lirk4imvt4q2t",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"meter.list\",\n    \"params\": {\n        \"network\": 149,\n        \"group\": [\"object\"],\n        \"include\": [\"ascueState\", \"zones\"],\n        \"filter\": []\n    },\n    \"id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://app.yaenergetik.ru/api?v2&sessionId=uvhvaue2rspdf0lirk4imvt4q2t",
+					"protocol": "https",
+					"host": [
+						"app",
+						"yaenergetik",
+						"ru"
+					],
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "v2",
+							"value": null
+						},
+						{
+							"key": "sessionId",
+							"value": "uvhvaue2rspdf0lirk4imvt4q2t"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.yaenergetik.ru/api?v2&sessionId=uvhvaue2rspdf0lirk4imvt4q2t",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"currentValue.list\",\n    \"params\": {\n        \"meter\": 13856\n    },\n    \"id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://app.yaenergetik.ru/api?v2&sessionId=uvhvaue2rspdf0lirk4imvt4q2t",
+					"protocol": "https",
+					"host": [
+						"app",
+						"yaenergetik",
+						"ru"
+					],
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "v2",
+							"value": null
+						},
+						{
+							"key": "sessionId",
+							"value": "uvhvaue2rspdf0lirk4imvt4q2t"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
