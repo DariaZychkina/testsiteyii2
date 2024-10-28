@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "https://app.yaenergetik.ru/api?v2",
+			"name": "network",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -56,7 +56,7 @@
 			"response": []
 		},
 		{
-			"name": "https://app.yaenergetik.ru/api?v2&sessionId=uvhvaue2rspdf0lirk4imvt4q2t",
+			"name": "meter",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -98,7 +98,7 @@
 			"response": []
 		},
 		{
-			"name": "https://app.yaenergetik.ru/api?v2&sessionId=uvhvaue2rspdf0lirk4imvt4q2t",
+			"name": "currentValue",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
